@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cringe Vaccine Settings</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            width: 320px;
+            padding: 20px;
+            background: #121212;
+            color: #fff;
+            text-align: center;
+            border-radius: 12px;
+        }
+
+        h1 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        /* Glassmorphism container */
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+        }
+
+        /* Input field */
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 8px;
+            outline: none;
+            background: rgba(255, 255, 255, 0.15);
+            color: #fff;
+        }
+
+        /* Buttons */
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        /* Save API Button */
+        #saveApiKey {
+            background: #4CAF50;
+            color: white;
+        }
+
+        #saveApiKey:hover {
+            background: #45a049;
+        }
+
+        /* GitHub Star Button */
+        .github-star {
+            background: #ffcc00;
+            color: #000;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .github-star:hover {
+            background: #ffdb4d;
+        }
+
+        /* Social Buttons */
+        .social-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+
+        .social-links a {
+            width: 30%;
+            padding: 10px;
+            text-align: center;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff;
+            transition: 0.3s;
+        }
+
+        .linkedin { background: #0077b5; }
+        .linkedin:hover { background: #005582; }
+
+        .twitter { background: #1DA1F2; }
+        .twitter:hover { background: #0d8ddd; }
+
+        .portfolio { background: #ff5722; }
+        .portfolio:hover { background: #e64a19; }
+    </style>
+</head>
+<body>
+
+    <h1>🚀 Cringe Vaccine</h1>
+
+    <div class="container">
+        <label for="apiKey">💎 Enter GEMINI API Key:</label>
+        <input type="text" id="apiKey" placeholder="Enter API Key">
+        <button id="saveApiKey">💾 Save API Key</button>
+        <p id="statusMessage" style="color: #4CAF50; margin-top: 5px;"></p>
+    </div>
+
+    <!-- Big GitHub Star Button -->
+    <button class="github-star" onclick="window.open('https://github.com/your-repo', '_blank')">
+        ⭐ Give a Star on GitHub
+    </button>
+
+    <!-- Social Links -->
+    <div class="social-links">
+        <a class="linkedin" href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
+        <a class="twitter" href="https://twitter.com/your-handle" target="_blank">Twitter</a>
+        <a class="portfolio" href="https://yourportfolio.com" target="_blank">Portfolio</a>
+    </div>
+
+    <script src="scripts/popup.js"></script>
+
+</body>
+</html>
